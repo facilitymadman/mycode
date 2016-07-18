@@ -1,0 +1,278 @@
+/*
+------- Kolory -------
+
+piasek: #eae6db
+piasek 2: #dcd8ce
+szary: #212629
+niebieski: #27536d
+
+linki: #5da2c7
+
+rozmiary fontów:
+12 - 1em
+13 - 1.08em
+14 - 1.16em
+20 - 1.66em
+35 - 2.92em
+
+*/
+
+@font-face {font-family: 'Museo-300';src: url('../_assets/webfonts/319597_0_0.eot');src: url('../_assets/webfonts/319597_0_0.eot?#iefix') format('embedded-opentype'),url('../_assets/webfonts/319597_0_0.woff2') format('woff2'),url('../_assets/webfonts/319597_0_0.woff') format('woff'),url('../_assets/webfonts/319597_0_0.ttf') format('truetype');}
+
+/* reset */
+
+ul, ol, dl {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	font-size: 1em;
+}
+
+a img {
+	border: none;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+/* reusable */
+
+.hide {
+	text-indent: -999em;	
+	height: 0px;
+}
+
+
+/* ~~ LINKI ~~ */
+a:link {
+	color: #5da2c7;
+}
+a:visited {
+	color: #5da2c7;
+}
+a:hover, a:active, a:focus {
+	text-decoration: none;
+}
+
+/* LAYOUT */
+
+html {
+	background: #eae6db url(../_img/bg-top-repeat.gif) repeat-x;
+	overflow: scroll;
+}
+
+body {
+	font-size: 0.75em; /* 12px */
+	font-family: "Myriad Pro", Arial, Helvetica, sans-serif;
+	width: 1133px;
+	margin: 0 auto;
+	padding: 0;
+
+}
+
+#left-column {
+	float: left;
+	width: 917px;
+}
+
+#right-column {
+	float: right;
+	width: 198px;
+}
+
+header {
+	overflow: hidden;
+	margin-top: 24px;
+	height: 146px;
+}
+
+header h1 {
+	background: url(../_img/logo.png) no-repeat;
+	float: left;
+	height: 150px;
+	width: 390px;
+	text-indent: -999em;
+
+}
+
+/* Nawigacja */
+
+nav {
+	border-top: #000 4px solid;
+}
+
+nav ul {
+	width: 917px;
+}
+
+nav ul li {
+	float: left;
+}
+
+nav ul a {
+	display: block;
+	width: 130px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: #000 1px 1px;
+	font-size: 1.2em;
+	color: #fff !important;
+	font-family: "Museo-300";	
+}
+
+.button a{ 
+	background-color: #2f5971;
+	border-right: 1px solid #fff;
+
+}
+
+.button:last-child a {
+	border-right: none;
+}
+
+
+
+
+/* TOP */
+#top {
+	background: url(../_img/top-bg.png) no-repeat;
+	height: 250px;
+	width: 960px;
+	float: left;
+}
+
+#top section {
+	width: 375px;
+	height: 90px;
+	margin: 60px 0 0 40px;
+	color: #fff;
+}
+
+#top section h2 {
+	font-size: 2.5em;
+	font-family: "Museo-300";
+}
+
+#top section p {
+	font-size: 1.18em;
+}
+
+/* artykuły */
+
+#artykuly section {
+	float: left;
+	width: 274px;
+	height: 252px;
+	background: #dcd8ce;
+	margin-bottom: 40px;
+	padding: 9px;
+}
+
+#art2 {
+	margin: 0 20px;
+}
+
+#artykuly h2, #artykuly h3 {
+	font-size: 1.18em;
+	
+}
+
+#artykuly p {
+	margin-top: 15px;
+}
+
+/* aktualności */
+
+#aktualnosci {
+	float: left;
+	width: 272px;
+	height: 218px;
+	background: #27536d;
+	padding: 10px;
+}
+
+#aktualnosci h2 {
+	font-size: 2.5em;
+	color: #fff;
+	font-family: "Museo-300";
+}
+
+#aktualnosci ul li {
+	font-size: 1.04em;
+	padding: 5px 0 5px 10px;
+	line-height: 1.08  em;
+	border-bottom: 1px #666 dotted;
+	color: #fff;
+}
+
+
+#witaj {
+	float: right;
+	background: #212629;
+	width: 584px;
+	height: 218px;
+	padding: 10px;
+	color: #fff;
+}
+
+#witaj h2 {
+	font-family: "Museo-300"; 
+	font-size: 2.5em;
+}
+#witaj p {
+	font-size: 1.16em;
+	margin-top: 15px;
+}
+
+/* footer */
+
+footer {
+	background: url(../_img/logo-footer.png) right no-repeat;
+	background-color:  #dcd8ce;
+	height: 37px;
+	color: rgba(102,102,102,1);
+	padding: 10px;
+	border-top: 4px solid #000;
+	clear: both;
+
+	
+}
+
+footer ul li, footer span {
+	float: left;
+}
+
+footer ul li a {
+	text-decoration: none;
+	display: block; /* wtedy uzytkownik moze klikac w caly obiekt, nie tylko link */
+	border-right: 1px solid rgba(0, 153, 204, 1);
+	padding: 0 5px;
+
+}
+
+footer ul li:last-child a {
+	border-right: none;
+}
+
+/* login */
+
+#sklep {
+	background: url(../_img/reklama.gif) right no-repeat;
+	border-bottom: 7px #000 solid;
+	width: 201px;
+	height: 249px;
+}
+
+/* reklamy */
+
+#reklamy {
+	padding: 4px 0;
+}
